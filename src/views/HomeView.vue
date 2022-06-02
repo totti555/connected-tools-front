@@ -17,11 +17,7 @@
             class="d-flex justify-content-align text-left align-items-center"
           >
             <p class="look-datas text-success">Observe tes données</p>
-            <img
-              src="https://www.kindpng.com/picc/m/351-3519818_cartoon-computer-screen-drawing-hd-png-download.png"
-              height="80"
-              width="80"
-            />
+            <img src="@/assets/logo-egel.png" height="90" width="110" />
           </div>
         </div>
       </div>

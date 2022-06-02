@@ -1,5 +1,5 @@
-import GelService from "../service/GelService";
-import { Gel } from "../models/Gel";
+import GelService from "@/service/GelService";
+import { Gel } from "@/models/Gel";
 
 const store = {
   state: () => ({
@@ -68,8 +68,6 @@ const store = {
     },
     async fetchListByGelIdAndMonth(context: any, params: any) {
       const gelService = new GelService();
-      console.log("store");
-      console.log(params);
       const gels = await gelService.fetchListByGelIdAndMonth(
         params.idGel,
         params.month
@@ -84,7 +82,6 @@ const store = {
       for (let i = 1; i <= formattedGelsNumber; i++) {
         array.push(i);
       }
-      console.log(array);
       const params = {
         formattedGelsNumber,
         array,

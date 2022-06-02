@@ -1,5 +1,5 @@
 import axios from "axios";
-import { Gel } from "../models/Gel";
+import { Gel } from "@/models/Gel";
 
 export default class GelService {
   async fetchGelsList(): Promise<Gel[]> {

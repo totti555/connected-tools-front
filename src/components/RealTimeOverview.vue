@@ -41,9 +41,6 @@ export default defineComponent({
   components: { GelPicture },
   setup() {
     const store = useStore();
-    const lastGelsUpdatesList = computed(
-      () => store.getters["gel/getLastGelsUpdatesList"]
-    );
 
     const gelById = ref();
     const fetchGelById = async () => {

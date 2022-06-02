@@ -18,7 +18,7 @@
             <td>{{ gel.idGel }}</td>
             <td>{{ new Date(gel.date).toLocaleString().split(",")[0] }}</td>
             <td>{{ gel.isEmpty }}</td>
-            <td>{{ gel.notDistributedDoses }}</td>
+            <td>{{ gel.distributedDoses }}</td>
             <td>{{ gel.notDistributedDoses }}</td>
           </tr>
         </tbody>
@@ -63,6 +63,7 @@ export default defineComponent({
     onMounted(async () => {
       await fetchAllGelsDatas();
       isLoading.value = false;
+      console.log(gelsList.value);
     });
     return { fetchAllGelsDatas, items, gelsList, isLoading };
   },

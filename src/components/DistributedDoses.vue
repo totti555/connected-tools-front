@@ -23,7 +23,7 @@
 // import axios from "axios";
 import { defineComponent, ref, onMounted, computed } from "vue";
 import { useStore } from "vuex";
-import FilterById from "./filters/FilterById.vue";
+import FilterById from "@/components/filters/FilterById.vue";
 
 export default defineComponent({
   name: "DistributedDoses",
